@@ -59,21 +59,21 @@ export const Navbar = () => {
         </div>
       </div>
 
-      <div className={click ? "nav__links active" : "nav__links"}>
-        <div className="call_line active">
-          <ul>
-            <li>
-              <i className="fa-solid fa-envelope"></i>
-              <p>info@skywalkerghana.com</p>
-              {/* <p>info@skywalkerghana.com</p> */}
-            </li>
-            <li>
-              <i className="fa-solid fa-phone"></i>
-              <p>+233 245 855 385 | +233 245 855 385 </p>
-            </li>
-          </ul>
-        </div>
+      <div className="call_line">
+        <ul>
+          <li>
+            <i className="fa-solid fa-envelope"></i>
+            <p>info@skywalkerghana.com</p>
+            {/* <p>info@skywalkerghana.com</p> */}
+          </li>
+          <li>
+            <i className="fa-solid fa-phone"></i>
+            <p>+233 245 855 385 | +233 245 855 385 </p>
+          </li>
+        </ul>
+      </div>
 
+      <div className={click ? "nav__links active" : "nav__links"}>
         <div className="nav__links_header">
           <div className="nav__logo_box" onClick={closeMenu}>
             <Link to="/">
