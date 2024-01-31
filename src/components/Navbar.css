@@ -189,6 +189,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* opacity: .9; */
   }
   .nav__bottom .nav__links .nav__link {
     display: inline-block;

@@ -1,10 +1,12 @@
 
 // components
 import { HeroSection } from "../HeroSection"
+import { Navbar } from "../Navbar"
 
 export const Home = () => {
   return (
     <>
+      <Navbar/>
      <HeroSection/>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum ad amet beatae, labore odit quo doloremque quidem voluptatum adipisci ullam excepturi sequi nesciunt est exercitationem earum maxime cupiditate possimus eveniet?
       </p>

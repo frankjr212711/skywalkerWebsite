@@ -1,7 +1,15 @@
 
+import { NavbarGJR } from "../NavbarGJR"
+
 
 export const GJR = () => {
   return (
-    <>GJR SITE</>
+    <>
+      
+      <NavbarGJR/>
+
+
+    
+    </>
   )
 }
