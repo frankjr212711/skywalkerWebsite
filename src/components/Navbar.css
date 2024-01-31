@@ -215,7 +215,10 @@
   .nav__logo_box {
     display: flex;
     align-items: center;
+    color: #fff;
+    gap: 20px;
   }
+
   .nav__data {
     height: 100%;
     display: flex;
@@ -278,7 +281,7 @@
   top: 8.9rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 90%;
+  width: 80%;
   height: 380px;
   background: #f9f9f9;
   background: #111;
