@@ -5,49 +5,48 @@
 .nav__gjr {
   width: 100%;
   background: #fff;
-  /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .3); */
-  /* border: 1px solid red; */
-  border-bottom: 1px solid #eee;;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .3);
+
+  display: flex;
+  justify-content: center;
 }
 .nav__content_gjr {
   width: 100%;
-  /* min-height: 15rem; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1.5rem 0;
-
 }
-
 .nav__title {
   font-size: 4rem;
   /* font-family: quicksand; */
   font-weight: 400;
   text-align: center;
-  color: rgb(234, 96, 46);
+  color: rgb(11, 111, 225);
   margin-bottom: 1rem;
   /* position: relative; */
- 
 }
 .nav__title span {
   font-size: 2rem;
   margin: 0 1rem;
-  font-family:fantasy;
-  position: fixed;
-
+  font-family:'Quicksand', sans-serif;
+  /* position: fixed; */
+  color: #424242;
   top: 4.5rem;
+  font-weight: 400;
 }
 .nav__banner_gjr {
   display: flex;
   align-items: center;
+  justify-content: center;
   column-gap: 30px;
   font-family: 'Trebuchet MS';
+  width: 100%;
 }
-
 .logo_gjr i {
   font-size: 3.5rem;
-  color:rgb(234, 96, 46)
+  color: rgb(11, 111, 225);
 }
 .nav__content_gjr ul {
   margin-top: 3rem;
