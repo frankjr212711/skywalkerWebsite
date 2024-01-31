@@ -18,7 +18,7 @@ function App() {
     <div className="App">
       <Router>
         {/* <Navbar /> */}
-        <div className="content">
+        {/* <div className="content"> */}
           <Routes>
             <Route path="/" element={ <Home />} />
             <Route path="/about" element={ <About />} />
@@ -31,7 +31,7 @@ function App() {
             <Route path="/librex" element={ <Librex />} />
             <Route path="/fifthstar" element={ <FifthStar />} /> 
           </Routes>
-        </div>
+        {/* </div> */}
       </Router>
     </div>
   );
