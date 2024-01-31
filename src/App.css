@@ -5,20 +5,10 @@
   list-style: none;
   text-decoration: none;
   font-family: 'Jost';
+
 }
 
 .content {
   width: 90%;
   margin: 8rem auto;
-  border: 1px solid red;
-
-}
-
-
-
-@media screen and (max-width: 960px) {
-  .content {
-    width: 100%;
-    margin: 5rem auto;
-  }
 }

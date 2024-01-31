@@ -2,16 +2,13 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-// COMPONENTS
+// Components
 import { Button } from "./Button";
 
 export const Navbar = () => {
-  // STATES
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
   const [scroll, setScroll] = useState(true);
-
-  // FUNCTIONS
   const handleClick = () => setClick(!click);
   const closeMenu = () => setClick(false);
 
@@ -23,134 +20,261 @@ export const Navbar = () => {
     }
   };
   const showOnScroll = () => {
-    console.log("scrolll");
+    console.log("scroll");
     if (window.innerHeight <= 960) {
       setButton(false);
     } else {
       setButton(true);
     }
   };
+
   return (
     <nav>
-      <div className="call_line">
-        <ul>
-          <li>
-            <i className="fa-solid fa-envelope"></i>
-            <p>info@skywalkerghana.com</p>
-            {/* <p>info@skywalkerghana.com</p> */}
-          </li>
-          <li>
-            <i className="fa-solid fa-phone"></i>
-            <p>+233 245 855 385 | +233 245 855 385 </p>
-          </li>
-        </ul>
-      </div>
-
-      {/* <div className="nav__content"> */}
-      <div className="nav__data">
-        <div className="nav__logo_box" onClick={closeMenu}>
-          <Link to="/">
-            {/* <img src="" alt="" /> */}
-            <h2>SKYWALKER</h2>
-          </Link>
-        </div>
-        <div className="nav__menu_btn" onClick={handleClick}>
-          <i className="fa fa-bars"></i>
-        </div>
-      </div>
-
-      <div className={click ? "nav__links active" : "nav__links"}>
-        <div className="call_line active">
-          <ul>
-            <li>
+      <div className="nav__top">
+        <div className="wrapper">
+          <div className="call__line_container">
+            <span className="">
               <i className="fa-solid fa-envelope"></i>
               <p>info@skywalkerghana.com</p>
-              {/* <p>info@skywalkerghana.com</p> */}
-            </li>
-            <li>
+            </span>
+            <span className="">
               <i className="fa-solid fa-phone"></i>
               <p>+233 245 855 385 | +233 245 855 385 </p>
-            </li>
-          </ul>
-        </div>
-
-        <div className="nav__links_header">
-          <div className="nav__logo_box" onClick={closeMenu}>
-            <Link to="/">
-              {/* <img src="" alt="" /> */}
-              <h2>SKYWALKER</h2>
-            </Link>
-          </div>
-
-          <div className="nav__close_btn" onClick={closeMenu}>
-            <i className="fa fa-times"></i>
+            </span>
           </div>
         </div>
-
-        <ul className="navs">
-          <li className="nav__link">
-            <Link to="/about" className="" onClick={closeMenu}>
-              Why Us?
-            </Link>
-          </li>
-          <li className="nav__link">
-            <span className="nav__btn">
-              Kitchens
-              <i className="fa fa-plus"></i>
-            </span>
-          </li>
-          <li className="nav__link">
-            <span className="nav__btn">
-              Wardrobes
-              <i className="fa fa-plus"></i>
-            </span>
-          </li>
-          <li className="nav__link">
-            <span className="nav__btn">
-              TV Units
-              <i className="fa fa-plus"></i>
-            </span>
-          </li>
-          <li className="nav__link ">
-            <span className="nav__btn">
-              Services
-              <i className="fa fa-plus"></i>
-            </span>
-          </li>
-          <li className="nav__link ">
-            <span className="nav__btn">
-              Company
-              <i className="fa fa-plus"></i>
-            </span>
-
-            <div className="dropdown__menu">
-              <Link to="/about" onClick={closeMenu}>
-                About Us
-              </Link>
-              <Link to="/contact" onClick={closeMenu}>
-                Contact Us
-              </Link>
-              <Link to="/careers" onClick={closeMenu}>
-                Careers
-              </Link>
-            </div>
-          </li>
-          <li className="nav__link">
-            {/* <Link to="/sales" className="nav__link" onClick={closeMenu}>
-              Contact Sales
-            </Link> */}
-            <Button
-              buttonStyle="btn--primary"
-              buttonSize="btn--large"
-              closeMenu={closeMenu}
-            >
-              Contact Sales
-            </Button>
-          </li>
-        </ul>
       </div>
 
-      {/* </div> */}
+      <div className="nav__bottom">
+        
+        <Link to="/" className="logo_link">
+          <div className="nav__logo_box">
+            <h3>Skywalker</h3>
+            <i className="fab fa-typo3"></i>
+          </div>
+        </Link>
+
+        <div className={click ? "nav__links active" : "nav__links"}>
+          
+          <div className="nav__header">
+            <Link to="/" onClick={closeMenu}>
+              <div className="nav__logo_box">
+                <h4>Skywalker</h4>
+                <i className="fab fa-typo3"></i>
+              </div>
+            </Link>
+            <div className="nav__close_btn" onClick={closeMenu}>
+              <i className="fa-solid fa-times"></i>
+            </div>
+          </div>
+
+          <ul className="navs">
+            <li className="nav__link">
+              <Link to="/about" className="nav__link" onClick={closeMenu}>
+                <span>Why Us?</span>
+              </Link>
+            </li>
+            <li className="nav__link">
+              <span>
+                Kitchens
+                <i className="fa fa-angle-down"></i>
+              </span>
+
+              <div className="mega__dropdown">
+                <ul className="mega__dropdown_container">
+                  <li>
+                    <h4>The Real Kitchen</h4>
+                    <span>
+                      <Link>Real Projects</Link>
+                      <Link>Projects Gallery & prices </Link>
+                    </span>
+                  </li>
+                  <li>
+                    <h4>The Classic English Kitchen</h4>
+                    <span>
+                      <Link>Classic Projects</Link>
+                      <Link>Projects Gallery & prices </Link>
+                    </span>
+                  </li>
+                  <li>
+                    <h4>The Heirloom Collection</h4>
+                    <span>
+                      <Link>Heirloom Furniture & Doors</Link>
+                      <Link>Heirloom Accessories</Link>
+                    </span>
+                  </li>
+                  <li>
+                    <h4>The Sabastian Cox Kitchen</h4>
+                    <span>
+                      <Link>The Sabastian Projects</Link>
+                      <Link>Sabastian Catalogue </Link>
+                    </span>
+                  </li>
+                  <li>
+                    <h4>The Real Kitchen</h4>
+                    <span>
+                      <Link>Real Projects</Link>
+                      <Link>Projects Gallery & prices </Link>
+                    </span>
+                  </li>
+                  <li>
+                    <h4>The Real Kitchen</h4>
+                    <span>
+                      <Link>Real Projects</Link>
+                      <Link>Projects Gallery & prices </Link>
+                    </span>
+                  </li>
+
+          
+                </ul>
+              </div>
+            </li>
+            <li className="nav__link">
+              <span>
+                Wardrobes
+                <i className="fa fa-angle-down"></i>
+              </span>
+
+              <div className="mega__dropdown">
+              <ul className="mega__dropdown_container">
+                  <li>
+                    <h4>The Real Kitchen</h4>
+                    <span>
+                      <Link>Real Projects</Link>
+                      <Link>Projects Gallery & prices </Link>
+                    </span>
+                  </li>
+                  <li>
+                    <h4>The Classic English Kitchen</h4>
+                    <span>
+                      <Link>Classic Projects</Link>
+                      <Link>Projects Gallery & prices </Link>
+                    </span>
+                  </li>
+                  <li>
+                    <h4>The Heirloom Collection</h4>
+                    <span>
+                      <Link>Heirloom Furniture & Doors</Link>
+                      <Link>Heirloom Accessories</Link>
+                    </span>
+                  </li>
+                  <li>
+                    <h4>The Sabastian Cox Kitchen</h4>
+                    <span>
+                      <Link>The Sabastian Projects</Link>
+                      <Link>Sabastian Catalogue </Link>
+                    </span>
+                  </li>
+                  <li>
+                    <h4>The Real Kitchen</h4>
+                    <span>
+                      <Link>Real Projects</Link>
+                      <Link>Projects Gallery & prices </Link>
+                    </span>
+                  </li>
+                  <li>
+                    <h4>The Real Kitchen</h4>
+                    <span>
+                      <Link>Real Projects</Link>
+                      <Link>Projects Gallery & prices </Link>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li className="nav__link">
+              <span>
+                TV Units
+                <i className="fa fa-angle-down"></i>
+              </span>
+
+              <div className="mega__dropdown">
+              <ul className="mega__dropdown_container">
+                  <li>
+                    <h4>The Real Kitchen</h4>
+                    <span>
+                      <Link>Real Projects</Link>
+                      <Link>Projects Gallery & prices </Link>
+                    </span>
+                  </li>
+                  <li>
+                    <h4>The Classic English Kitchen</h4>
+                    <span>
+                      <Link>Classic Projects</Link>
+                      <Link>Projects Gallery & prices </Link>
+                    </span>
+                  </li>
+                  <li>
+                    <h4>The Heirloom Collection</h4>
+                    <span>
+                      <Link>Heirloom Furniture & Doors</Link>
+                      <Link>Heirloom Accessories</Link>
+                    </span>
+                  </li>
+                  <li>
+                    <h4>The Sabastian Cox Kitchen</h4>
+                    <span>
+                      <Link>The Sabastian Projects</Link>
+                      <Link>Sabastian Catalogue </Link>
+                    </span>
+                  </li>
+                  <li>
+                    <h4>The Real Kitchen</h4>
+                    <span>
+                      <Link>Real Projects</Link>
+                      <Link>Projects Gallery & prices </Link>
+                    </span>
+                  </li>
+                  <li>
+                    <h4>The Real Kitchen</h4>
+                    <span>
+                      <Link>Real Projects</Link>
+                      <Link>Projects Gallery & prices </Link>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li className="nav__link nav__link_icon">
+              <span>
+                Company
+                <i className="fa fa-angle-down"></i>
+              </span>
+              <div className="dropdown__menu">
+                <ul>
+                  <li >
+                    <Link to="/about" onClick={closeMenu}>About Us</Link>
+                  </li>
+                  <li>
+                    <Link to="/contact">Contact</Link>
+                  </li>
+                  <li>
+                    <Link to="/careers">Careers</Link>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li className="nav__link">
+              <span>
+                <Button
+                  buttonStyle="btn--primary"
+                  buttinSize="btn--large"
+                  closeMenu={closeMenu}
+                >
+                  Contact Sales
+                </Button>
+                {/* <i className="fa-sold fa-plus"></i> */}
+              </span>
+            </li>
+          </ul>
+
+
+        </div>
+
+        <div className="nav__menu_btn" onClick={handleClick}>
+          <i className="fa-solid fa-bars"></i>
+        </div>
+      </div>
     </nav>
   );
 };
