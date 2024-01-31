@@ -6,7 +6,6 @@ export const Home = () => {
   return (
     <>
      <HeroSection/>
-
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum ad amet beatae, labore odit quo doloremque quidem voluptatum adipisci ullam excepturi sequi nesciunt est exercitationem earum maxime cupiditate possimus eveniet?
       </p>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem sit expedita nihil minima laboriosam facere dolorem voluptate maxime odio, tempora ex, iste, aliquid maiores. Cupiditate distinctio culpa in ea enim!</p>

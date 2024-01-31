@@ -46,7 +46,7 @@ export const Navbar = () => {
       </div>
 
       <div className="nav__bottom">
-        
+
         <Link to="/" className="logo_link">
           <div className="nav__logo_box">
             <h3>Skywalker</h3>
@@ -55,7 +55,7 @@ export const Navbar = () => {
         </Link>
 
         <div className={click ? "nav__links active" : "nav__links"}>
-          
+
           <div className="nav__header">
             <Link to="/" onClick={closeMenu}>
               <div className="nav__logo_box">
@@ -125,7 +125,6 @@ export const Navbar = () => {
                     </span>
                   </li>
 
-          
                 </ul>
               </div>
             </li>
@@ -134,21 +133,41 @@ export const Navbar = () => {
                 Wardrobes
                 <i className="fa fa-angle-down"></i>
               </span>
-
               <div className="mega__dropdown">
-              <ul className="mega__dropdown_container">
+                <ul className="mega__dropdown_container">
                   <li>
-                    <h4>The Real Kitchen</h4>
+
+                    <header>
+                      <h4>Fitted Wardrobes</h4>
+                    </header>
+
                     <span>
-                      <Link>Real Projects</Link>
-                      <Link>Projects Gallery & prices </Link>
+
+                      <Link>Avon Fitted</Link>
+                      <Link>Cliveden</Link>
+                      <Link>Croft</Link>
+                      <Link>New Elemore</Link>
+                      <Link>Elkin</Link>
+                      <Link>Langton</Link>
+                      <Link>Langton Mirrored</Link>
+                      <Link>Libretto</Link>
+                      <Link>Linje</Link>
+                      <Link>Marden</Link>
+                      <Link>Radley</Link>
+                      <Link>Rialto Curved</Link>
+                      <Link>Rialto Square</Link>
+                      <Link>Seton</Link>
+                      <Link>Willesley</Link>
+
                     </span>
                   </li>
                   <li>
-                    <h4>The Classic English Kitchen</h4>
+                    <h4>Sliding Wardrobes</h4>
                     <span>
-                      <Link>Classic Projects</Link>
-                      <Link>Projects Gallery & prices </Link>
+                      <Link>High Gloss Sliding</Link>
+                      <Link>Matt Finish Sliding </Link>
+                      <Link>Mirrored Sliding </Link>
+                      <Link>Painted Sliding </Link>
                     </span>
                   </li>
                   <li>
@@ -189,7 +208,7 @@ export const Navbar = () => {
               </span>
 
               <div className="mega__dropdown">
-              <ul className="mega__dropdown_container">
+                <ul className="mega__dropdown_container">
                   <li>
                     <h4>The Real Kitchen</h4>
                     <span>
@@ -235,6 +254,76 @@ export const Navbar = () => {
                 </ul>
               </div>
             </li>
+          
+            <li className="nav__link nav__link_icon">
+              <span>
+                Our Companies
+                <i className="fa fa-angle-down"></i>
+              </span>
+              <div className="mega__dropdown">
+                <ul className="mega__dropdown_container">
+                  <li>
+
+                    <header>
+                      <Link to='/gjr' onClick={closeMenu}>
+                        <h4>GJR FURNITURE WORKS </h4>
+                      </Link>
+                    </header>
+
+                    <span>
+                      <Link>Kitchens</Link>
+                      <Link>Wardrobes</Link>
+                      <Link>TV Units</Link>
+                      <Link>Vanity Units</Link>
+                      <Link>Building Construction</Link>
+                      <Link>Janitorial Services</Link>
+                      <Link>Others</Link>
+                    </span>
+                  </li>
+                  <li>
+                    <h4>SKYWALKER FILTERED WATER</h4>
+                    <span>
+                      <Link>Sachet Water Production & Distribution</Link>
+                      <Link>Water Despenser</Link>
+                      <Link>Dispenser Bottles</Link>
+                      <Link>Delivery </Link>
+                    </span>
+                  </li>
+                  <li>
+                    <h4>LIBREX HOLDINGS</h4>
+                    <span>
+                      <Link>Pamello Hot & Cold Water Purifier</Link>
+                      <Link>Crystello Water Purifier</Link>
+                      <Link>Waterello Water Treatment System</Link>
+                      <Link>Ritello Water Filteration Vacuum Cleaner</Link>
+                    </span>
+                  </li>
+                  <li>
+                    <h4>5TH STAR ALUMINIUMS</h4>
+                    <span>
+                      <Link>Cookwares</Link>
+                      <Link>Frying Pans & Metch</Link>
+                      <Link>Set of Cooking Pots All Sizes</Link>
+                      <Link>Others</Link>
+                    </span>
+                  </li>
+                  {/* <li>
+                    <h4>The Real Kitchen</h4>
+                    <span>
+                      <Link>Real Projects</Link>
+                      <Link>Projects Gallery & prices </Link>
+                    </span>
+                  </li> */}
+                  {/* <li>
+                    <h4>The Real Kitchen</h4>
+                    <span>
+                      <Link>Real Projects</Link>
+                      <Link>Projects Gallery & prices </Link>
+                    </span>
+                  </li> */}
+                </ul>
+              </div>
+            </li>
             <li className="nav__link nav__link_icon">
               <span>
                 Company
@@ -254,6 +343,7 @@ export const Navbar = () => {
                 </ul>
               </div>
             </li>
+
             <li className="nav__link">
               <span>
                 <Button
