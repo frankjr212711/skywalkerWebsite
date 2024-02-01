@@ -35,7 +35,7 @@ export const Skywalker = () => {
             <li>
               <span>
                 <i className="fa fa-envelope"></i>
-                <p>EMAIL</p>
+                <p>info@skywalkerghana.com</p>
               </span>
             </li>
             <li>
