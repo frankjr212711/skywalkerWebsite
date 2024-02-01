@@ -1,3 +1,4 @@
+import { Button } from "../Button";
 import { SkyHeroSection } from "./SkyHeroSection";
 import "./Skywalker.css";
 import { Link } from "react-router-dom";
@@ -125,9 +126,10 @@ export const Skywalker = () => {
 
 
       <SkyHeroSection />
-      
+      <div className="category__section">
+
       <div className="items__container">
-      <div className="item">
+        <div className="item">
           <div className="item__img_box">
             image
           </div>
@@ -147,7 +149,6 @@ export const Skywalker = () => {
           </div>
         </div>
       
-
         <div className="item">
           <div className="item__img_box">
             image
@@ -168,7 +169,24 @@ export const Skywalker = () => {
           </div>
         </div>
 
+        </div>
+        
+
+        <div className="notice__board_container">
+
+          <h1>Why Drink just any Water when you can drink <span>Pure,</span> & <span>Clean</span> instead</h1>
+
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sit perspiciatis rem, ducimus hic impedit quibusdam omnis cum a, officia quo deleniti voluptate repellendus dolores? Voluptate fugiat adipisci temporibus atque.</h3>
+
+          <Button>READ MORE</Button>
+          <Button>READ MORE</Button>
+        </div>
       </div>
+    
+
+
+
+
     </>
   );
 };

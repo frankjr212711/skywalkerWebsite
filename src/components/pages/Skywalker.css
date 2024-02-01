@@ -276,3 +276,27 @@
  .item:hover .info__box {
   transform: translateY(-10px);
  }
+
+ .category__section {
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items:baseline;
+  gap: 40px;
+ }
+ .category__section .notice__board_container {
+  position: relative;
+  top: 2rem;
+ }
+ .category__section .notice__board_container h1 {
+  margin-bottom: 2rem;
+
+ }
+ .category__section .notice__board_container span {
+  color: deepskyblue;
+ }
+ .category__section .notice__board_container button {
+  margin-top: 2rem;
+  margin-right: 6px;
+ }
+ 
