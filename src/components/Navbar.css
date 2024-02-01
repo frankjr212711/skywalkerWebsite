@@ -306,12 +306,16 @@
   /* border: 1px solid #ddd; */
   display: inline-flex;
   align-items: center;
-  column-gap: 20px;
+  column-gap: 20px
+}
+.mega__dropdown .mega__dropdown_container li {
+  display: flex;
+  flex-direction: column;
 
 
 }
 .mega__dropdown .mega__dropdown_container li a i {
-  margin-left: -60px;
+  /* margin-left: -60px; */
 }
 
 .mega__dropdown .mega__dropdown_container a {
