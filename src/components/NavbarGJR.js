@@ -3,9 +3,9 @@ import "./NavbarGJR.css";
 import { Link } from "react-router-dom";
 
 const containerStyles = {
-  width: '100%',
-  // height: '750px',
-  margin: '0 auto'
+  width: '100%',          
+  margin: '0 auto',
+  gridRow: 'span 3'
 };
 
 export const NavbarGJR = () => {
@@ -31,14 +31,15 @@ export const NavbarGJR = () => {
             <h1 className="nav__title">
               GJR
               <span>Furniture</span>
-            </h1>
+              </h1>
+              <p>The Right Fit For Your Home & Office</p>
           </div>
 
-          <p>The Right Fit For Your Home & Office</p>
+   
 
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/gjr">Home</Link>
             </li>
             <li>
               <Link>Kitchens</Link>

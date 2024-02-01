@@ -5,7 +5,7 @@ export const GjrHeroSection = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const sliderStyles = {
-    height: '749px',
+    height: '100%',
     position: 'relative'
 }
   const slideStyles = {
@@ -69,7 +69,7 @@ export const GjrHeroSection = ({ slides }) => {
       <div style={dotsContainerStyles}>
         {slides.map((slide, slideIndex) => {
           <div key={slideIndex} style={dotStyles}>
-            <h1>slide.title</h1>
+                ⚫️
             
           </div>
         })}
