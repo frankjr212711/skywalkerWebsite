@@ -4,6 +4,7 @@ import './GjrHeroSection.css'
 export const GjrHeroSection = () => {
   
 
+
   return (
     <div >
 

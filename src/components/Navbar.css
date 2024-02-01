@@ -185,7 +185,7 @@
     padding: 0 4rem;
     height: 72px;
     background: #f9f9f9;
-    background: #111;
+    background: #000044;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -198,10 +198,11 @@
     cursor: pointer;
   }
   .nav__bottom  .nav__links .navs .nav__link  {
-  color: #eee;
+  color: #fff;
+  font-size: 20px;
   }
   .nav__bottom .nav__links .nav__link:hover {
-    color: #ac8420;
+    /* color: #ac8420; */
   }
   .nav__bottom .nav__links .nav__link i {
     /* display: none; */
@@ -249,17 +250,17 @@
     width: 200px;
     background: #f9f9f9;
     background: #111;
+    background: #000044;;
     /* box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2); */
     visibility: hidden;
     opacity: 0;
     transition: .3s ease;
   }
   .nav__links .nav__link:hover .dropdown__menu {
-    top: 8rem;
+    top: 7.5rem;
     visibility: visible;
     opacity: 1;
   }
-
   .nav__links .dropdown__menu ul li {
     width: 100%;
     display: block;
@@ -273,12 +274,12 @@
   }
   .nav__links .dropdown__menu ul li a:hover {
     background:  #ac8420;
+    background:  deepskyblue;
     color: #fff;
   }
 .nav__header {
   display: none;
 }
-
 .nav__link .mega__dropdown{
   position: fixed;
   top: 8.9rem;
@@ -288,11 +289,12 @@
   min-height: 450px;
   background: #f9f9f9;
   background: #111;
+  background: #000044;
   visibility: hidden;
   opacity: 0;
   transition: .3s ease;
   border: 1px solid #eee;
-  border: 1px solid #111;
+  border: 1px solid #000044;
 }
  .mega__dropdown .mega__dropdown_container {
   width: 100%;
@@ -306,24 +308,19 @@
   /* border: 1px solid #ddd; */
   display: inline-flex;
   align-items: center;
-  column-gap: 20px
+  column-gap: 20px;
 }
 .mega__dropdown .mega__dropdown_container li {
   display: flex;
   flex-direction: column;
-
-
 }
 .mega__dropdown .mega__dropdown_container li a i {
   /* margin-left: -60px; */
 }
-
 .mega__dropdown .mega__dropdown_container a {
   margin-bottom: 1rem;
-  /* color: coral; */
-  /* color: cyan */
-  color: #ddd;
   color: #ac8420;
+  color: deepskyblue;
 }
 .mega__dropdown .mega__dropdown_container span {
   margin-right: 20px;
@@ -332,9 +329,9 @@
 }
 .mega__dropdown .mega__dropdown_container span a {
   display: block;
-  line-height: 2;
+  line-height:1.5;
   color: #f8f0fc;
-  margin: .25rem 0
+  margin: .25rem 0;
 }
 .mega__dropdown .mega__dropdown_container span a:hover {
   color: #ac8420;

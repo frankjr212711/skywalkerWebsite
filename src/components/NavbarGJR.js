@@ -2,13 +2,15 @@ import { GjrHeroSection, Slider } from "./GjrHeroSection";
 import "./NavbarGJR.css";
 import { Link } from "react-router-dom";
 
-const containerStyles = {
+const gjr_hero_container = {
   width: "100%",
   margin: "0 auto",
-  gridRow: "span 3",
+  height: '100vh',
+  // gridRow: "span 2",
 };
 
 export const NavbarGJR = () => {
+
   const imgOne = "images/img-1.jpg";
   const imgTwo = "images/img-2.jpg";
   const imgThre = "images/img-4.jpg";
@@ -51,8 +53,9 @@ export const NavbarGJR = () => {
             </ul>
           </div>
         </div>
-
-        <GjrHeroSection />
+        <div style={gjr_hero_container}>
+          <GjrHeroSection />
+        </div>
       </section>
     </>
   );
