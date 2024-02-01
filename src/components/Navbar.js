@@ -276,8 +276,8 @@ export const Navbar = () => {
                       <Link>Wardrobes</Link>
                       <Link>TV Units</Link>
                       <Link>Vanity Units</Link>
-                      <Link>Building Construction</Link>
-                      <Link>Janitorial Services</Link>
+                      {/* <Link>Building Construction</Link> */}
+                      {/* <Link>Janitorial Services</Link> */}
                       <Link>Others</Link>
                     </span>
                   </li>

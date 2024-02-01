@@ -285,7 +285,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
-  height: 450px;
+  min-height: 450px;
   background: #f9f9f9;
   background: #111;
   visibility: hidden;
@@ -299,7 +299,7 @@
   height: 100%;
   padding: 3rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 .mega__dropdown .mega__dropdown_container li a {
@@ -330,7 +330,7 @@
   display: block;
   line-height: 2;
   color: #f8f0fc;
-  margin: .5rem 0
+  margin: .25rem 0
 }
 .mega__dropdown .mega__dropdown_container span a:hover {
   color: #ac8420;
