@@ -192,7 +192,7 @@
 
 .third__section_content .sky__dropdown_menu-info ul {
   position: fixed;
-  top: 15.9rem;
+  top: 14.9rem;
   left: 31.3%;
   transform: translateX(-50%);
   width: 15.1%;
@@ -203,7 +203,7 @@
   transition: .3s ease;
 }
 .third__section_content li:hover .sky__dropdown_menu-info ul {
-  top: 14.96rem;
+  top: 14.8rem;
   visibility: visible;
   opacity: 1;
 }
