@@ -3,8 +3,9 @@ import './GjrHeroSection.css'
 
 export const GjrHeroSection = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+
   const sliderStyles = {
-    height: '750px',
+    height: '530px',
     position: 'relative'
 }
   const slideStyles = {
@@ -49,7 +50,6 @@ export const GjrHeroSection = ({ slides }) => {
   const dotsContainerStyles = {
     display: 'flex',
     justifyContent: 'center',
-    border: '1px solid red',
   }
   const dotStyles = {
     margin: '0 3px',
