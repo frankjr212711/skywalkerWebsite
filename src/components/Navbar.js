@@ -74,7 +74,7 @@ export const Navbar = () => {
                 <span>Why Us?</span>
               </Link>
             </li>
-            <li className="nav__link">
+            {/* <li className="nav__link">
               <span>
                 Kitchens
                 <i className="fa fa-angle-down"></i>
@@ -127,8 +127,8 @@ export const Navbar = () => {
 
                 </ul>
               </div>
-            </li>
-            <li className="nav__link">
+            </li> */}
+            {/* <li className="nav__link">
               <span>
                 Wardrobes
                 <i className="fa fa-angle-down"></i>
@@ -200,8 +200,8 @@ export const Navbar = () => {
                   </li>
                 </ul>
               </div>
-            </li>
-            <li className="nav__link">
+            </li> */}
+            {/* <li className="nav__link">
               <span>
                 TV Units
                 <i className="fa fa-angle-down"></i>
@@ -253,7 +253,7 @@ export const Navbar = () => {
                   </li>
                 </ul>
               </div>
-            </li>
+            </li> */}
           
             <li className="nav__link nav__link_icon">
               <span>
@@ -266,7 +266,8 @@ export const Navbar = () => {
 
                     <header>
                       <Link to='/gjr' onClick={closeMenu}>
-                        <h4>GJR FURNITURE WORKS </h4>
+                      <i className="fa fa-arrow-right"></i>
+                        <h3>GJR FURNITURES</h3>
                       </Link>
                     </header>
 
@@ -281,7 +282,10 @@ export const Navbar = () => {
                     </span>
                   </li>
                   <li>
-                    <h4>SKYWALKER FILTERED WATER</h4>
+                    <Link to='/skywalker'>
+                      <i className="fa fa-arrow-right"></i>
+                      <h3>SKYWALKER WATER</h3>
+                    </Link>
                     <span>
                       <Link>Sachet Water Production & Distribution</Link>
                       <Link>Water Despenser</Link>
@@ -290,7 +294,11 @@ export const Navbar = () => {
                     </span>
                   </li>
                   <li>
-                    <h4>LIBREX HOLDINGS</h4>
+                    <Link to='/librex'>
+                      <i className="fa fa-arrow-right"></i>
+                      <h3>LIBREX HOLDINGS</h3>
+                    </Link>
+                
                     <span>
                       <Link>Pamello Hot & Cold Water Purifier</Link>
                       <Link>Crystello Water Purifier</Link>
@@ -299,7 +307,10 @@ export const Navbar = () => {
                     </span>
                   </li>
                   <li>
-                    <h4>5TH STAR ALUMINIUMS</h4>
+                    <Link to='/fifthstar'>
+                      <i className="fa fa-arrow-right"></i>
+                      <h3>5TH STAR ALUMINIUMS</h3>
+                    </Link>
                     <span>
                       <Link>Cookwares</Link>
                       <Link>Frying Pans & Metch</Link>
