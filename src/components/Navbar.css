@@ -284,7 +284,7 @@
   top: 8.9rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 90%;
+  width: 100%;
   min-height: 450px;
   background: #f9f9f9;
   background: #111;
@@ -340,7 +340,7 @@
   color: #ac8420;
 }
 .nav__links .nav__link:hover  .mega__dropdown  {
-  top: 8rem;
+  top: 7.5rem;
   visibility: visible;
   opacity: 1;
 }
