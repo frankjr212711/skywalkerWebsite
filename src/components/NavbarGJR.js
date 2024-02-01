@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const containerStyles = {
   width: '100%',
   height: '750px',
-  margin: '0 auto',
+  margin: '0 auto'
 };
 
 export const NavbarGJR = () => {
