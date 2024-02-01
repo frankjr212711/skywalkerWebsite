@@ -113,7 +113,6 @@
     display: inline-block;
     color:#fff;
     font-weight: 500;
-
   }
   .third__section_content li i {
     margin-left: 1rem;
@@ -129,14 +128,14 @@
 .third__section_content .sky__dropdown_menu-water ul {
   position: fixed;
   top: 15.9rem;
-  left: 34.5%;
+  left: 40%;
   transform: translateX(-50%);
-  width: 49%;
-  min-height: 250px;
+  width: 60%;
+  min-height: 350px;
   background: #000044;
   visibility: hidden;
   opacity: 0;
-  padding: 2rem;
+  padding: 4rem 0 0 2rem;
   transition: .3s ease;
   border: 1px solid #eee;
   border: 1px solid #000044;
@@ -152,9 +151,21 @@
 .sky__dropdown_menu-water ul li {
   display: block;
 }
+
 .sky__dropdown_menu-water ul li span {
   color: deepskyblue;
+  font-size: 20px;
+  font-weight: 600;
 }
+
+.third__section_content .sky__dropdown_menu-water ul li a  {
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  padding: 1rem;
+  transition: all .3s ease;
+
+} 
 /* .third__section_content .sky__dropdown_menu-dispense ul {
   position: fixed;
   top: 15.9rem;
@@ -189,10 +200,7 @@
   background: #000044;
   visibility: hidden;
   opacity: 0;
-  /* padding:  0 .5rem ; */
   transition: .3s ease;
-
-
 }
 .third__section_content li:hover .sky__dropdown_menu-info ul {
   top: 14.96rem;
@@ -206,14 +214,12 @@
   width: 100%;
   height: 100%;
   font-size: 15px;
-  padding: 1rem 1rem;
+  padding: 1rem;
   transition: all .3s ease;
-
 } 
 .third__section_content .sky__dropdown_menu-info ul li a:hover {
   background: #299fe7;
 }
-
  .sky__dropdown_menu-water  .sky__dropdown_content .items {
   margin-top: 1rem;
 }

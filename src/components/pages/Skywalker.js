@@ -1,3 +1,4 @@
+import { SkyHeroSection } from "./SkyHeroSection";
 import "./Skywalker.css";
 import { Link } from "react-router-dom";
 
@@ -121,6 +122,9 @@ export const Skywalker = () => {
           </ul>
         </div>
       </div>
+
+
+      <SkyHeroSection/>
     </>
   );
 };
