@@ -326,6 +326,11 @@
   margin-bottom: 1rem;
   color: #ac8420;
   color: deepskyblue;
+  transition: .3s ease;
+}
+.mega__dropdown .mega__dropdown_container a:hover {
+  color: lightblue;
+  color: #ac8420;
 }
 .mega__dropdown .mega__dropdown_container span {
   margin-right: 20px;

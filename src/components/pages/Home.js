@@ -7,7 +7,11 @@ export const Home = () => {
   return (
     <>
       <Navbar/>
-     <HeroSection/>
+
+      
+      <div className="home__page">
+      <HeroSection />
+ 
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum ad amet beatae, labore odit quo doloremque quidem voluptatum adipisci ullam excepturi sequi nesciunt est exercitationem earum maxime cupiditate possimus eveniet?
       </p>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem sit expedita nihil minima laboriosam facere dolorem voluptate maxime odio, tempora ex, iste, aliquid maiores. Cupiditate distinctio culpa in ea enim!</p>
@@ -111,7 +115,8 @@ export const Home = () => {
       Obcaecati nam beatae reprehenderit mollitia, non eveniet quam enim aliquid ipsum, velit officiis molestias consectetur labore impedit dolorum nihil harum sit, nesciunt voluptas natus voluptates quae. Soluta laboriosam molestiae fugiat?
       Quasi excepturi minus quibusdam nemo vel ratione amet maiores dolores perspiciatis ad nesciunt autem reprehenderit nostrum sunt iste, reiciendis nobis quas aut praesentium, id possimus eligendi. Eos repellendus beatae quisquam?
       Rem laboriosam amet excepturi eius unde quidem, minus blanditiis, dicta voluptatem voluptate nobis sequi atque sint, nostrum maiores eaque ipsum. Unde repudiandae nulla suscipit recusandae facere eligendi at. Harum, delectus?
-      Ad quia beatae magnam culpa nisi assumenda a vel officiis? Nihil quo minima doloribus, debitis dignissimos unde obcaecati blanditiis alias delectus itaque quaerat temporibus, consectetur quae impedit deleniti eveniet recusandae?</p>
+          Ad quia beatae magnam culpa nisi assumenda a vel officiis? Nihil quo minima doloribus, debitis dignissimos unde obcaecati blanditiis alias delectus itaque quaerat temporibus, consectetur quae impedit deleniti eveniet recusandae?</p>
+          </div>
     </>
   )
 }
