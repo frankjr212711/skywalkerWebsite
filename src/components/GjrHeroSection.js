@@ -5,7 +5,7 @@ export const GjrHeroSection = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const sliderStyles = {
-    height: '650px',
+    height: '749px',
     position: 'relative'
 }
   const slideStyles = {
