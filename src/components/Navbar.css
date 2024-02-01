@@ -305,6 +305,9 @@
 .mega__dropdown .mega__dropdown_container li:not(:last-child) {
   margin-bottom: 2rem;
 }
+.mega__dropdown .mega__dropdown_container li:last-child {
+  grid-column: span 3;
+}
 
 .mega__dropdown .mega__dropdown_container li a {
   /* border: 1px solid #ddd; */
