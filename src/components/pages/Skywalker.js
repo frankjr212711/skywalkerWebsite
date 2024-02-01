@@ -124,7 +124,41 @@ export const Skywalker = () => {
       </div>
 
 
-      <SkyHeroSection/>
+      <SkyHeroSection />
+      
+      <div className="items__container">
+      <div className="item">
+          <div className="item__img_box">
+            image
+          </div>
+          <div className="info__box">
+            <h5 className="item__desc">22 ARTESIAN</h5>
+            <p className="item__post">2 PRODUCTS</p>
+          </div>
+        </div>
+
+        <div className="item">
+          <div className="item__img_box">
+            image
+          </div>
+          <div className="info__box">
+            <h5 className="item__desc">22 ARTESIAN</h5>
+            <p className="item__post">2 PRODUCTS</p>
+          </div>
+        </div>
+      
+
+        <div className="item">
+          <div className="item__img_box">
+            image
+          </div>
+          <div className="info__box">
+            <h5 className="item__desc">22 ARTESIAN</h5>
+            <p className="item__post">2 PRODUCTS</p>
+          </div>
+        </div>
+
+      </div>
     </>
   );
 };
