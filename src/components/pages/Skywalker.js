@@ -17,7 +17,6 @@ export const Skywalker = () => {
       </div>
 
       <div className="second__banner">
-
         <div className="second__section_content">
           <div className="second__logo_box">
             <Link to="/skywalker">
@@ -27,10 +26,9 @@ export const Skywalker = () => {
               <div className="second__banner_logo_title">
                 <h1>SKYWALKER</h1>
               </div>
-              <p>water never tasted good...</p>
+              <p>water never tasted soo good...</p>
             </Link>
           </div>
-
           <ul className="second__banner_contact_section">
             <li>
               <span>
@@ -99,26 +97,6 @@ export const Skywalker = () => {
 
               </div>
             </li>
-            {/* <li className="t_link">
-              <span>DISPENSERS</span>
-              <i className="fa fa-caret-down"></i>
-              <div className="sky__dropdown_menu-dispense">
-              <ul >
-                <li>
-                  <Link>CONTACT US</Link>
-                </li>
-                <li>
-                  <Link>DELIVERY INFORMATION</Link>
-                </li>
-                <li>
-                  <Link>TERMS & CONDITIONS</Link>
-                </li>
-                <li>
-                  <Link>CAREERS</Link>
-                  </li>
-              </ul>
-              </div>
-            </li> */}
             <li className="t_link">
               <span>MORE INFORMATION</span>
               <i className="fa fa-caret-down"></i>

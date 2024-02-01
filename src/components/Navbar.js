@@ -262,8 +262,8 @@ export const Navbar = () => {
               </span>
               <div className="mega__dropdown">
                 <ul className="mega__dropdown_container">
+                 
                   <li>
-
                     <header>
                       <Link to='/gjr' onClick={closeMenu}>
                       <i className="fa fa-arrow-right"></i>
@@ -318,20 +318,7 @@ export const Navbar = () => {
                       <Link>Others</Link>
                     </span>
                   </li>
-                  {/* <li>
-                    <h4>The Real Kitchen</h4>
-                    <span>
-                      <Link>Real Projects</Link>
-                      <Link>Projects Gallery & prices </Link>
-                    </span>
-                  </li> */}
-                  {/* <li>
-                    <h4>The Real Kitchen</h4>
-                    <span>
-                      <Link>Real Projects</Link>
-                      <Link>Projects Gallery & prices </Link>
-                    </span>
-                  </li> */}
+          
                 </ul>
               </div>
             </li>
@@ -354,7 +341,6 @@ export const Navbar = () => {
                 </ul>
               </div>
             </li>
-
             <li className="nav__link">
               <span>
                 <Button
@@ -368,7 +354,6 @@ export const Navbar = () => {
               </span>
             </li>
           </ul>
-
 
         </div>
 
