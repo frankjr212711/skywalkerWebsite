@@ -13,15 +13,16 @@ const slides = [
 ];
 
 const containerStyles = {
-  width: "100%",
+  width: "50%",
   height: "749px",
   margin: "11rem auto 0 auto",
+
+  border: "1px solid red",
 };
 export const Skywalker = () => {
   return (
     <>
       <div className="sky__nav">
-
         <div className="first__banner">
           <div className="first__section_content">
             <h2>Quality Drinking Waters delivered across Ghana</h2>
@@ -51,7 +52,9 @@ export const Skywalker = () => {
               <li>
                 <span>
                   <i className="fa fa-envelope"></i>
-                  <a href="mailto:info@skywalkerghana.com">info@skywalkerghana.com</a>
+                  <a href="mailto:info@skywalkerghana.com">
+                    info@skywalkerghana.com
+                  </a>
                 </span>
               </li>
               <li>
@@ -114,37 +117,33 @@ export const Skywalker = () => {
                 </div>
               </li>
               <li className="t_link">
-              <span>MORE INFORMATION</span>
-              <i className="fa fa-caret-down"></i>
-              <div className="sky__dropdown_menu-info">
-              <ul className="sky__dropdown_content">
-                <li>
-                  <Link>CONTACT US</Link>
-                </li>
-                <li>
-                  <Link>DELIVERY INFORMATION</Link>
-                </li>
-                <li>
-                  <Link>TERMS & CONDITIONS</Link>
-                </li>
-                <li>
-                  <Link>CAREERS</Link>
-                  </li>
-              </ul>
-              </div>
-          
-            </li>
+                <span>MORE INFORMATION</span>
+                <i className="fa fa-caret-down"></i>
+                <div className="sky__dropdown_menu-info">
+                  <ul className="sky__dropdown_content">
+                    <li>
+                      <Link>CONTACT US</Link>
+                    </li>
+                    <li>
+                      <Link>DELIVERY INFORMATION</Link>
+                    </li>
+                    <li>
+                      <Link>TERMS & CONDITIONS</Link>
+                    </li>
+                    <li>
+                      <Link>CAREERS</Link>
+                    </li>
+                  </ul>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
       </div>
 
-   
-
       <div style={containerStyles}>
         <SkyHeroSection slides={slides} />
       </div>
-
 
       <div className="category__section">
         <div className="items__container">
