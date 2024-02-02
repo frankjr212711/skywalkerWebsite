@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   z-index: 999;
-  opacity: .9;
+
 }
 
 .first__banner  {
@@ -92,7 +92,7 @@
 
 .third__banner {
   width: 100%;
-  background: #299fe7;
+  background-image: linear-gradient(to right, #299fe7,rgba(41, 158, 231, 0.404)) ;
  }
 .third__section_content {
   width: 80%;
@@ -163,7 +163,7 @@
 
 
   .third__section_content li:hover .sky__dropdown_menu-water {
-    top: 15rem;
+    top: 15.5rem;
     visibility: visible;
     opacity: 1;
   }
@@ -182,20 +182,26 @@
 } 
 
 .third__section_content .sky__dropdown_menu-info {
-  position: fixed;
-  top: 15.5rem;
-  left: 406px;
-  width: 250px;
-  height: 230px;
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  transform: translate(-50%,0px);
+  width: 249px;
+  height: 220px;
   background: #000044;
   visibility: hidden;
   opacity: 0;
   transition: all .3s ease;
 }
 .third__section_content li:hover .sky__dropdown_menu-info {
-  top: 15rem;
+  top: 100%;
     visibility: visible;
     opacity: 1;
+}
+.sky__dropdown_menu-info .sky__dropdown_content {
+  width: 100%;
+  height: 100%;
+  margin: auto;
 }
 .third__section_content .sky__dropdown_content li {
   width: 100%;
@@ -204,7 +210,7 @@
 .third__section_content .sky__dropdown_menu-info li a  {
   width: 100%;
   height: 100%;
-  font-size: 15px;
+  font-size: 16px;
   padding: 1rem;
   display: inline-block;
   transition: all .3s ease;
