@@ -82,11 +82,13 @@
 
  border-right: 1px solid #ddd;
 }
+.second__banner_contact_section li span a,
 .second__banner_contact_section li span {
   letter-spacing: .02em;
-  color: #8d8d8d;
-  font-size: .8em;
+  color: #8d8d8d !important;
+  font-size: .9em !important;
   font-weight: bolder;
+
  }
 
 
