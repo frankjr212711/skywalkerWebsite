@@ -60,10 +60,6 @@ export const SkyHeroSection = ({ slides }) => {
     width: '200px',
     background: '#fff',
 
-
-    
-
-
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center'

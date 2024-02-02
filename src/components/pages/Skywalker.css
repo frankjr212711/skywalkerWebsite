@@ -4,8 +4,7 @@
   left: 0;
   width: 100%;
   z-index: 999;
-  opacity: .5;
-
+  /* opacity: .5; */
 }
 
 .first__banner  {
