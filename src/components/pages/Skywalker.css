@@ -6,7 +6,6 @@
   z-index: 999;
   /* opacity: .5; */
 }
-
 .first__banner  {
   width: 100%;
   background: rgba(30, 115, 190);
@@ -27,7 +26,6 @@
   font-size: 18px;
   color: #fff;
 }
-
 
 .second__banner {
   padding: .5rem 0;

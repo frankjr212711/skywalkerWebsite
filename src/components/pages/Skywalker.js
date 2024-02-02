@@ -15,9 +15,7 @@ const slides = [
 const containerStyles = {
   width: "100%",
   height: "749px",
-  margin: "14rem auto 0 auto",
-
-  border: "1px solid red",
+  margin: "11.5rem auto 0 auto",
 };
 export const Skywalker = () => {
   return (
