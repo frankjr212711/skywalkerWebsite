@@ -256,7 +256,7 @@
     transition: .3s ease;
   }
   .nav__links .nav__link:hover .dropdown__menu {
-    top: 7.5rem;
+    top: 7.6rem;
     visibility: visible;
     opacity: 1;
   }
@@ -290,6 +290,7 @@
   background: #000044;
   visibility: hidden;
   opacity: 0;
+  padding: 3rem;
   transition: .3s ease;
   border: 1px solid #000044;
 }
@@ -297,9 +298,10 @@
   width: 80%;
   height: 100%;
   margin: auto;
-  padding: 3rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+
 
 }
 .mega__dropdown .mega__dropdown_container li:not(:last-child) {

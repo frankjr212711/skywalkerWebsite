@@ -1,0 +1,212 @@
+
+
+.sky__nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  /* opacity: .5; */
+ }
+.first__banner  {
+  width: 100%;
+  background: rgba(30, 115, 190);
+ }
+.first__section_content {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0 10px 0;
+ }
+.first__banner h2 {
+  color:#fff;
+ }
+.social__media i  {
+  margin-left: 1rem;
+  font-size: 18px;
+  color: #fff;
+ }
+.second__banner {
+  padding: .5rem 0;
+  background: white;
+ }
+.second__section_content {
+  width: 80%;
+  margin: auto;
+  height: 108px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0 10px 0;
+  /* border: 1px solid red; */
+ }
+.second__logo_box {
+  height: 91px;
+  position: relative;
+  /* border: 1px solid red; */
+ }
+.second__logo_box a {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  color: #000044;
+ }
+.second__logo_box i {
+  font-size: 55px;
+ }
+.second__banner_logo_title {
+  /* align-self: flex-end; */
+  /* font-size: 18px; */
+ }
+.second__banner .second__logo_box p {
+  width: 100%;
+  color: #5bafd3;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+}
+.second__banner_contact_section span {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  padding: 0 1rem;
+}
+.second__banner_contact_section li {
+ display: inline-block;
+ border-right: 1px solid #ddd;
+}
+.second__banner_contact_section li span a,
+.second__banner_contact_section li span {
+  letter-spacing: .02em;
+  color: #8d8d8d !important;
+  font-size: .9em !important;
+  font-weight: bolder;
+ }
+.third__banner {
+  width: 100%;
+  background-image: linear-gradient(to right, #299fe7,rgba(41, 158, 231, 0.404)) ;
+ }
+.third__section_content {
+  width: 80%;
+  min-height: 46px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+ }
+ .third__section_content ul {
+  width: 100%;
+ }
+.third__section_content .t_link {
+  padding: 1.3rem 2rem;
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  /* border-right: 1px solid rgba(255, 255, 255, .5); */
+ }
+ .third__section_content .t_link:hover {
+  background: #000044;
+  color: #fff;
+  cursor: pointer;
+ }
+  .third__section_content li a {
+    color:#fff;
+    font-weight: 500;
+ 
+  }
+  .third__section_content .t_link a {
+    position: relative;
+  }
+  .third__section_content li i {
+    margin-left: 1rem;
+  }
+  .sky__dropdown_menu-water {
+    position: fixed;
+    top: 19rem;
+    left: 45%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 420px;
+    background: #000044;
+    border: 1px solid #000044;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease;
+  }
+  .sky__dropdown_menu-water .sky__dropdown_content {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    padding: 4rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* border: 1px solid red; */
+  }
+  .third__section_content li:hover .sky__dropdown_menu-water {
+    top: 14.9rem;
+    visibility: visible;
+    opacity: 1;
+  }
+.sky__dropdown_menu-water ul li span {
+  color: deepskyblue;
+  font-size: 20px;
+  font-weight: 600;
+}
+.third__section_content .sky__dropdown_menu-water ul li a  {
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  padding: 1rem;
+  transition: all .3s ease;
+} 
+
+.third__section_content .sky__dropdown_menu-info {
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  transform: translate(-50%,0px);
+  width: 265px;
+  height: 220px;
+  background: #000044;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s ease;
+}
+.third__section_content li:hover .sky__dropdown_menu-info {
+  top: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+.sky__dropdown_menu-info .sky__dropdown_content {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+.third__section_content .sky__dropdown_content li {
+  width: 100%;
+  display: block;
+}
+.third__section_content .sky__dropdown_menu-info li a  {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  padding: 1rem;
+  display: inline-block;
+  transition: all .3s ease;
+} 
+.third__section_content .sky__dropdown_menu-info ul li a:hover {
+  background: #299fe7;
+}
+ .sky__dropdown_menu-water  .sky__dropdown_content .items {
+  margin-top: 1rem;
+}
+.sky__dropdown_menu-water  .sky__dropdown_content .items p {
+  margin-top: .25rem;
+  line-height: 1.6;
+}

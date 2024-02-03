@@ -29,7 +29,7 @@ export const NavbarGJR = () => {
               </div>
               <h1 className="nav__title">
                 GJR
-                <span>Furniture</span>
+                <span>COMPANY LIMITED</span>
               </h1>
               <p>The Right Fit For Your Home & Office</p>
             </div>
