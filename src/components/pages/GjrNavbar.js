@@ -1,14 +1,9 @@
 
 import "./GjrNavbar.css";
-import {GjrHeroSection} from './GjrHeroSection'
+import { GjrHeroSection } from './GjrHeroSection';
+import { Hero } from "../Hero";
 import { Link } from "react-router-dom";
 
-const gjr_hero_container = {
-  width: "100%",
-  margin: "0 auto",
-  height: '100vh',
-  // gridRow: "span 2",
-};
 
 export const GjrNavbar = () => {
 
@@ -54,9 +49,12 @@ export const GjrNavbar = () => {
             </ul>
           </div>
         </div>
-        <div style={gjr_hero_container}>
-          <GjrHeroSection />
+
+        
+        <div>
+          <Hero/>
         </div>
+     
       </section>
     </>
   );

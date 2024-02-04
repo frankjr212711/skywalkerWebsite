@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom';
 import './SkyNavbar.css';
 import './Skywalker.css';
+import { Hero } from '../Hero';
 
 export const SkyNavbar = () => {
   return (
     <>
-       <div className="sky__nav">
+      <div className="sky__nav_wrapper">
+      <div className="sky__nav">
         <div className="first__banner">
           <div className="first__section_content">
             <h2>Quality Drinking Waters delivered across Ghana</h2>
@@ -121,7 +123,11 @@ export const SkyNavbar = () => {
             </ul>
           </div>
         </div>
+        </div>
+        
+        <Hero/>
       </div>
+      
     
     
     </>

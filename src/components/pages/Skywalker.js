@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { SkyHeroSection } from "./SkyHeroSection";
 import { SkyNavbar } from "./SkyNavbar";
 import { SkyCategorySection } from "./SkyCategorySection";
+import { Hero } from "../Hero";
 
 const slides = [
   { url: "images/sky-img-01.jpg", title: "image_1" },
@@ -22,22 +23,22 @@ const containerStyles = {
   zIndex: 9999,
 };
 
-
-
 export const Skywalker = () => {
   return (
     <>
-      <div className="sky__wrapper">
+      <div className="sky__nav_wrapper">
         <SkyNavbar />
 
-        <div style={containerStyles}>
+        {/* <div style={containerStyles}>
           <SkyHeroSection slides={slides} />
-        </div>
+        </div> */}
 
-        <div>
-          <SkyCategorySection />
-        </div>
+
       </div>
+
+      {/* <div>
+        <SkyCategorySection />
+      </div> */}
     </>
   );
 };
