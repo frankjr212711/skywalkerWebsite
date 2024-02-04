@@ -6,7 +6,6 @@ export const SkyCategorySection = () => {
   return (
     <>
       <div className="category__section">
-        
         <div className="items__container">
           <div className="item">
             <div className="item__img_box">
@@ -21,18 +20,26 @@ export const SkyCategorySection = () => {
           </div>
 
           <div className="item">
-            <div className="item__img_box">image</div>
+            <div className="item__img_box">
+              <div className="img_box">
+                <img src="/images/sky-img-11.png" alt="" />
+              </div>
+            </div>
             <div className="info__box">
-              <h5 className="item__desc">22 ARTESIAN</h5>
-              <p className="item__post">2 PRODUCTS</p>
+              <h5 className="item__desc">DISPENSER BOTTLES</h5>
+              <p className="item__post">CHANGE ON REQUEST</p>
             </div>
           </div>
 
           <div className="item">
-            <div className="item__img_box">image</div>
+            <div className="item__img_box">
+              <div className="img_box">
+                <img src="/images/sky-img-11.png" alt="" />
+              </div>
+            </div>
             <div className="info__box">
-              <h5 className="item__desc">22 ARTESIAN</h5>
-              <p className="item__post">2 PRODUCTS</p>
+              <h5 className="item__desc">DISPENSER BOTTLES</h5>
+              <p className="item__post">CHANGE ON REQUEST</p>
             </div>
           </div>
 
@@ -63,8 +70,6 @@ export const SkyCategorySection = () => {
           <Button>READ MORE</Button>
           <Button>READ MORE</Button>
         </div>
-
-
       </div>
     </>
   );

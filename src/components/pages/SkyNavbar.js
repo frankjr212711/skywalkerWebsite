@@ -67,7 +67,6 @@ export const SkyNavbar = () => {
               <li className="t_link">
                 <span>WATERS</span>
                 <i className="fa fa-caret-down"></i>
-
                 <div className="sky__dropdown_menu-water">
                   <ul className="sky__dropdown_content">
                     <li>
