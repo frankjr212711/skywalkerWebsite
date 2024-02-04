@@ -30,7 +30,7 @@
   color: #fff;
  }
 .second__banner {
-  padding: .5rem 0;
+  /* padding: .5rem 0; */
   background: white;
  }
 .second__section_content {
@@ -41,12 +41,11 @@
   align-items: center;
   justify-content: space-between;
   padding: 15px 0 10px 0;
-  /* border: 1px solid red; */
  }
 .second__logo_box {
   height: 91px;
   position: relative;
-  /* border: 1px solid red; */
+  display: flex;
  }
 .second__logo_box a {
   display: flex;
@@ -57,13 +56,16 @@
 .second__logo_box i {
   font-size: 55px;
  }
+ .second__banner_logo_title h1 {
+  /* font-size: 2rem; */
+ }
 .second__banner .second__logo_box p {
   width: 100%;
   color: #5bafd3;
   display: block;
   position: absolute;
-  top: 50%;
-  left: 25%;
+  top: 70%;
+  left: 30%;
 }
 .second__banner_contact_section span {
   display: flex;

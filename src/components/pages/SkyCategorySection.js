@@ -1,19 +1,18 @@
-
-import './SkyCategorySection.css';
-import './Skywalker.css';
+import "./SkyCategorySection.css";
+import "./Skywalker.css";
 import { Button } from "../Button";
 
 export const SkyCategorySection = () => {
   return (
     <>
-         <div className="category__section">
+      <div className="category__section">
+        
         <div className="items__container">
           <div className="item">
             <div className="item__img_box">
               <div className="img_box">
                 <img src="/images/sky-img-11.png" alt="" />
               </div>
-            
             </div>
             <div className="info__box">
               <h5 className="item__desc">DISPENSER BOTTLES</h5>
@@ -64,7 +63,9 @@ export const SkyCategorySection = () => {
           <Button>READ MORE</Button>
           <Button>READ MORE</Button>
         </div>
+
+
       </div>
     </>
-  )
-}
+  );
+};

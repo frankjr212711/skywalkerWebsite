@@ -31,7 +31,7 @@ export const HomeNavbar = () => {
   return (
     <nav>
       <div className="nav__top">
-        <div className="wrapper">
+        <div className="nav__top_wrapper">
           <div className="call__line_container">
             <span className="">
               <i className="fa-solid fa-envelope"></i>
@@ -46,132 +46,135 @@ export const HomeNavbar = () => {
       </div>
 
       <div className="nav__bottom">
-        <Link to="/" className="logo_link">
-          <div className="nav__logo_box">
-            <h3>Skywalker</h3>
-            <i className="fab fa-typo3"></i>
-          </div>
-        </Link>
-        <div className={click ? "nav__links active" : "nav__links"}>
-          <div className="nav__header">
-
-            <Link to="/" onClick={closeMenu}>
-              <div className="nav__logo_box">
-                <h4>Skywalker</h4>
-                <i className="fab fa-typo3"></i>
-              </div>
-            </Link>
-
-            <div className="nav__close_btn" onClick={closeMenu}>
-              <i className="fa-solid fa-times"></i>
+        <div className="nav__bottom_content">
+          <Link to="/" className="logo_link">
+            <div className="nav__logo_box">
+            <h3>SkywalkerGroup</h3>
+              <i className="fab fa-typo3"></i>
             </div>
-          </div>
-          <ul className="navs">
-            <li className="nav__link">
-              <Link to="/about" className="nav__link" onClick={closeMenu}>
-                <span>Why Us?</span>
+          </Link>
+          <div className={click ? "nav__links active" : "nav__links"}>
+            <div className="nav__header">
+              <Link to="/" onClick={closeMenu}>
+                <div className="nav__logo_box">
+                  <h3>SkywalkerGroup</h3>
+                  <i className="fab fa-typo3"></i>
+                </div>
               </Link>
-            </li>
-            <li className="nav__link nav__link_icon">
-              <span>
-                Our Companies
-                <i className="fa fa-angle-down"></i>
-              </span>
-              <div className="mega__dropdown">
-                <ul className="mega__dropdown_container">
-                  <li>
-                    <header>
-                      <Link to='/gjr' onClick={closeMenu}>
+
+              <div className="nav__close_btn" onClick={closeMenu}>
+                <i className="fa-solid fa-times"></i>
+              </div>
+            </div>
+            <ul className="navs">
+              <li className="nav__link">
+                <Link to="/about" className="nav__link" onClick={closeMenu}>
+                  <span>Why Us?</span>
+                </Link>
+              </li>
+              <li className="nav__link nav__link_icon">
+                <span>
+                  Our Companies
+                  <i className="fa fa-angle-down"></i>
+                </span>
+                <div className="mega__dropdown">
+                  <ul className="mega__dropdown_container">
+                    <li>
+                      <header>
+                        <Link to="/gjr" onClick={closeMenu}>
+                          <i className="fa fa-arrow-right"></i>
+                          <h3>GJR COMPANY LTD.</h3>
+                        </Link>
+                      </header>
+
+                      <span>
+                        <Link>Kitchens</Link>
+                        <Link>Wardrobes</Link>
+                        <Link>TV Units</Link>
+                        <Link>Vanity Units</Link>
+                        {/* <Link>Building Construction</Link> */}
+                        {/* <Link>Janitorial Services</Link> */}
+                        <Link>Others</Link>
+                      </span>
+                    </li>
+                    <li>
+                      <Link to="/skywalker">
                         <i className="fa fa-arrow-right"></i>
-                        <h3>GJR COMPANY LTD.</h3>
+                        <h3>SKYWALKER COMPANY</h3>
                       </Link>
-                    </header>
+                      <span>
+                        <Link>Sachet Water Production & Distribution</Link>
+                        <Link>Water Despenser</Link>
+                        <Link>Dispenser Bottles</Link>
+                        <Link>Free Delivery</Link>
+                      </span>
+                    </li>
+                    <li>
+                      <Link to="/librex">
+                        <i className="fa fa-arrow-right"></i>
+                        <h3>LIBREX HOLDINGS</h3>
+                      </Link>
 
-                    <span>
-                      <Link>Kitchens</Link>
-                      <Link>Wardrobes</Link>
-                      <Link>TV Units</Link>
-                      <Link>Vanity Units</Link>
-                      {/* <Link>Building Construction</Link> */}
-                      {/* <Link>Janitorial Services</Link> */}
-                      <Link>Others</Link>
-                    </span>
-                  </li>
-                  <li>
-                    <Link to='/skywalker'>
-                      <i className="fa fa-arrow-right"></i>
-                      <h3>SKYWALKER COMPANY</h3>
-                    </Link>
-                    <span>
-                      <Link>Sachet Water Production & Distribution</Link>
-                      <Link>Water Despenser</Link>
-                      <Link>Dispenser Bottles</Link>
-                      <Link>Free Delivery</Link>
-                    </span>
-                  </li>
-                  <li>
-                    <Link to='/librex'>
-                      <i className="fa fa-arrow-right"></i>
-                      <h3>LIBREX HOLDINGS</h3>
-                    </Link>
-
-                    <span>
-                      <Link>Pamello Hot & Cold Water Purifier</Link>
-                      <Link>Crystello Water Purifier</Link>
-                      <Link>Waterello Water Treatment System</Link>
-                      <Link>Ritello Water Filteration Vacuum Cleaner</Link>
-                    </span>
-                  </li>
-                  <li>
-                    <Link to='/fifthstar'>
-                      <i className="fa fa-arrow-right"></i>
-                      <h3>5TH STAR COMPANY LTD</h3>
-                    </Link>
-                    <span>
-                      <Link>Cookwares</Link>
-                      <Link>Frying Pans & Metch</Link>
-                      <Link>Set of Cooking Pots All Sizes</Link>
-                      <Link>Others</Link>
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li className="nav__link nav__link_icon">
-              <span>
-                Company
-                <i className="fa fa-angle-down"></i>
-              </span>
-              <div className="dropdown__menu">
-                <ul>
-                  <li >
-                    <Link to="/about" onClick={closeMenu}>About Us</Link>
-                  </li>
-                  <li>
-                    <Link to="/contact">Contact</Link>
-                  </li>
-                  <li>
-                    <Link to="/careers">Careers</Link>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li className="nav__link">
-              <span>
-                <Button
-                  buttonStyle="btn--primary"
-                  buttinSize="btn--large"
-                  closeMenu={closeMenu}
-                >
-                  Contact Sales
-                </Button>
-                {/* <i className="fa-sold fa-plus"></i> */}
-              </span>
-            </li>
-          </ul>
-        </div>
-        <div className="nav__menu_btn" onClick={handleClick}>
-          <i className="fa-solid fa-bars"></i>
+                      <span>
+                        <Link>Pamello Hot & Cold Water Purifier</Link>
+                        <Link>Crystello Water Purifier</Link>
+                        <Link>Waterello Water Treatment System</Link>
+                        <Link>Ritello Water Filteration Vacuum Cleaner</Link>
+                      </span>
+                    </li>
+                    <li>
+                      <Link to="/fifthstar">
+                        <i className="fa fa-arrow-right"></i>
+                        <h3>5TH STAR COMPANY LTD</h3>
+                      </Link>
+                      <span>
+                        <Link>Cookwares</Link>
+                        <Link>Frying Pans & Metch</Link>
+                        <Link>Set of Cooking Pots All Sizes</Link>
+                        <Link>Others</Link>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              {/* <li className="nav__link nav__link_icon">
+                <span>
+                  Company
+                  <i className="fa fa-angle-down"></i>
+                </span>
+                <div className="dropdown__menu">
+                  <ul>
+                    <li>
+                      <Link to="/about" onClick={closeMenu}>
+                        About Us
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/contact">Contact</Link>
+                    </li>
+                    <li>
+                      <Link to="/careers">Careers</Link>
+                    </li>
+                  </ul>
+                </div>
+              </li> */}
+              <li className="nav__link">
+                <span>
+                  <Button
+                    buttonStyle="btn--primary"
+                    buttinSize="btn--large"
+                    closeMenu={closeMenu}
+                  >
+                    Contact
+                  </Button>
+                  {/* <i className="fa-sold fa-plus"></i> */}
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div className="nav__menu_btn" onClick={handleClick}>
+            <i className="fa-solid fa-bars"></i>
+          </div>
         </div>
       </div>
     </nav>

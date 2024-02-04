@@ -1,14 +1,14 @@
 
 
 .category__section {
-  width: 100%;
-  height: 100vh;
+  width: 80%;
+  /* height: 100vh; */
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items:center;
   gap: 40px;
-  padding: 1rem 4rem;
+  padding:  2rem 1rem;
   background: #f9f9f9;
   /* font-family: 'Jost'; */
  }
@@ -70,6 +70,7 @@
 }
 .item .info__box {
   transition: all .3s;
+  background: #fff;
   /* border: 1px solid #eee; */
 }
 .item:hover {

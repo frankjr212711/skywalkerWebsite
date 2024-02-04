@@ -1,12 +1,17 @@
-import { Button } from "../Button"
-
+import './About.css'
+import { HomeNavbar } from './HomeNavbar'
 
 export const About = () => {
   return (
     <>
-      <h1>About page</h1>
-
-      <Button buttonStyle='btn--primary'>READ MORE</Button>
+       <HomeNavbar/>
+    <div className="about__content_wrapper">
+      <div className="about__content">
+        <h1>About Us</h1>
+      </div>
+    </div>
+    
     </>
+ 
   )
 }

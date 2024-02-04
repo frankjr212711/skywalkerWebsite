@@ -8,6 +8,7 @@
   display: grid;
   grid-template-rows: repeat(5, 1fr);
   font-family: 'Montserrat';
+
 }
 .nav__gjr {
   width: 100%;
@@ -39,7 +40,7 @@
 .nav__title {
   font-size: 54px;
   /* font-family: quicksand; */
-  /* font-weight: 400; */
+  font-weight: bolder;
   text-align: center;
   color: rgb(11, 111, 225);
   margin-bottom: 1rem;

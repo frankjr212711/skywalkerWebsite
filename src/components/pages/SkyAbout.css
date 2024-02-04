@@ -1,0 +1,9 @@
+
+.about__content_wrapper {
+  width: 100%;
+
+}
+.about__content_wrapper .abaout__content {
+  width: 80%;
+  margin: auto;
+}

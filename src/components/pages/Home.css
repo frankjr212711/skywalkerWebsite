@@ -1,0 +1,16 @@
+
+.home__page_wrapper {
+  width: 100%;
+  background: #fff;
+  font-family: 'Jost';
+}
+.home__content {
+  width: 80%;
+  height: 100%;
+  margin: 8rem auto;
+  background: #fefefe;
+}
+.home__content p {
+  text-align: justify;
+  line-height: 1.5;
+}
