@@ -1,103 +1,62 @@
-import { useState } from "react";
+
 import "./GjrHeroSection.css";
+import { useState, useRef, useEffect } from 'react';
+
+import img1 from "../../assets/gjr-img-03.jpg";
+import img2 from "../../assets/gjr-img-02.jpg";
+import img3 from "../../assets/gjr-img-01.jpg";
+import img4 from "../../assets/gjr-img-03.jpg";
+import img5 from "../../assets/gjr-img-02.jpg";
 
 
 
-export const GjrHeroSection = ({ slides }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+export const GjrHeroSection = () => {
+  const [open, setOpen] = useState(0);
 
-  const sliderStyles = {
-    height: "100%",
-    position: "relative",
-  };
-  const slideStyles = {
-    width: "100%",
-    height: "100%",
-    backgroundPosition: "center",
-    backgroundSize: "cover",
-    // backgroundImage: `url(${slides[currentIndex].url})`,
-  };
-  const leftArrowStyles = {
-    // width: '100px',
-    // height: '100%',
-    border: "1px solid red",
-    position: "absolute",
-    top: "50%",
-    left: "32px",
-    transform: "translate(0, -50%)",
-    fontSize: "35px",
-    color: "#111",
-    zIndex: 1,
-    cursor: "pointer",
-  };
-  const rightArrowStyles = {
-    position: "absolute",
-    top: "50%",
-    right: "32px",
-    transform: "translate(-50%, 0%)",
-    fontSize: "35px",
-    color: "#111",
-    zIndex: 1,
-    cursor: "pointer",
-  };
+  const sliderContent = [
+    {
+      img: img1, 
+      name: 'Wanda Maximoff',
+    },
+    {
+      img: img2, 
+      name: 'The Hulk',
+    },
+    {
+      img: img3, 
+      name: 'Iron Man',
+    },
+    {
+      img: img4, 
+      name: 'Black Panther',
+    },
+    {
+      img: img5, 
+      name: 'Black Panther',
+    }
+]
 
-  const goToPrevious = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
-  };
-  const goToNext = () => {
-    const isLastSlide = currentIndex === slides.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
-  };
-  const dotContainerStyles = {
-    position: "absolute",
-    bottom: "32px",
-    left: "50%",
-    transform: "translate(-50%, 0)",
-    height: "100px",
-    width: "200px",
-    border: "1px solid red",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  };
-  const dotStyles = {
-    margin: "0 auto",
-    cursor: "pointer",
-    fontSize: "20px",
-  };
-  const goToSlide = (slideIndex) => {
-    setCurrentIndex(slideIndex);
-  };
-
-  return (
-    <div style={sliderStyles}>
-      
-      <div style={leftArrowStyles}>
-        <i className="fa fa-angle-left" onClick={goToPrevious}></i>
-      </div>
-
-      <div style={rightArrowStyles}>
-        <i className="fa fa-angle-right" onClick={goToNext}></i>
-      </div>
-
-      <div style={slideStyles}>
-        <div style={dotContainerStyles}>
-          {/* {slides.map((slide, slideIndex) => {
-            <div
-              key={slideIndex}
-              style={dotStyles}
-              onClick={() => goToSlide(slideIndex)}
-            >
-             
-              <i className="fas fa-circle"></i>
-            </div>; 
-          })}*/}
+return (
+  <>
+   <div className="gjr_hero_wrapper">
+        <div className="gjr_hero_content">
+          {
+            sliderContent.map((slide, i) => {
+              return (
+                <img src={slide.img} key={i}  alt="slideImg_01" className={`${i === open ? "clip-visible": "clip-hidden"}`} />
+              )
+            })
+          }
+          <div>
+          <button>
+            <i className="fa fa-angle-left"></i>
+            </button>
+          </div>
+          
         </div>
+      
+     
       </div>
-
-    </div>
+    </>
   );
 };
