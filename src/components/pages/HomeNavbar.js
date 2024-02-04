@@ -157,7 +157,7 @@ export const HomeNavbar = () => {
                     buttinSize="btn--large"
                     closeMenu={closeMenu}
                   >
-                    Contact
+                    Contact Us
                   </Button>
                   {/* <i className="fa-sold fa-plus"></i> */}
                 </span>

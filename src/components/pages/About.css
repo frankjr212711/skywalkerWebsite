@@ -1,11 +1,11 @@
 
-.about_content__wrapper {
+.about_content_wrapper {
   width: 100%;
 }
-.about__content {
+.about_content {
   width: 80%;
-  margin: 10rem auto;
+  margin:8rem auto;
 }
-.about__content h1 {
+.about_content h1 {
   font-size: 4rem;
 }

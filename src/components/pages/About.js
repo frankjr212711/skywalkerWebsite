@@ -5,9 +5,9 @@ export const About = () => {
   return (
     <>
        <HomeNavbar/>
-    <div className="about__content_wrapper">
-      <div className="about__content">
-        <h1>About Us</h1>
+    <div className="about_content_wrapper">
+      <div className="about_content">
+        <h1>Why Us?</h1>
       </div>
     </div>
     
