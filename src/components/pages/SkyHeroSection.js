@@ -5,6 +5,7 @@ import './Skywalker.css';
 
 
 export const SkyHeroSection = ({ slides }) => {
+  console.log(slides)
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const sliderStyles = {

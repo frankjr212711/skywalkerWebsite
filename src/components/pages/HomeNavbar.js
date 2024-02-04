@@ -8,7 +8,6 @@ import { Button } from "../Button";
 export const HomeNavbar = () => {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
-  const [scroll, setScroll] = useState(true);
   const handleClick = () => setClick(!click);
   const closeMenu = () => setClick(false);
 
@@ -19,14 +18,7 @@ export const HomeNavbar = () => {
       setButton(true);
     }
   };
-  const showOnScroll = () => {
-    console.log("scroll");
-    if (window.innerHeight <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
+ 
 
   return (
     <nav>

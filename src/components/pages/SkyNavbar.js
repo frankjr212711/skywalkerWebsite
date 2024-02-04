@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
 import './SkyNavbar.css';
 import './Skywalker.css';
 
