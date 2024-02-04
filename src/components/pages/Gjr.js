@@ -1,14 +1,12 @@
 
-import { NavbarGJR } from "../NavbarGJR"
+import { GjrNavbar } from "./GjrNavbar"
 
 
 export const GJR = () => {
   return (
     <>
       
-      <NavbarGJR/>
-
-
+      <GjrNavbar/>
     
     </>
   )

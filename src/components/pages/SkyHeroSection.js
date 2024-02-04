@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import './SkyHeroSection.css';
+import './Skywalker.css';
 
 
 export const SkyHeroSection = ({ slides }) => {
@@ -16,9 +17,11 @@ export const SkyHeroSection = ({ slides }) => {
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundImage: `url(${slides[currentIndex].url})`,
-
   }
   const leftArrowStyles = {
+    // width: '100px',
+    // height: '100%',
+    border: '1px solid red',
     position: 'absolute',
     top: '50%',
     left: '32px',
@@ -58,7 +61,7 @@ export const SkyHeroSection = ({ slides }) => {
     transform: 'translate(-50%, 0)',
     height: '100px',
     width: '200px',
-    background: '#fff',
+    border: '1px solid red',
 
     display: 'flex',
     justifyContent: 'center',
