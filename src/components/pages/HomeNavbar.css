@@ -360,7 +360,6 @@
 }
 
 
-
 @media screen and (max-width: 960px) {
   .nav__link_icon::after {
     content: '\f00d';

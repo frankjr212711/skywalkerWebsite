@@ -1,7 +1,7 @@
 
 
 import { Link } from "react-router-dom";
-import "./SkyNav.css";
+// import "./SkyNav.css";
 import { Hero } from "../Hero";
 
 export const SkyNav = () => {
@@ -67,12 +67,11 @@ export const SkyNav = () => {
 
         <div className="third__banner">
           <div className="third__section_content">
-            <ul>
-              <li className="t_link">
-                <Link to="/skywalker">HOME</Link>
-                {/* <i className="fa fa-caret-down"></i> */}
+            <ul className="third_links">
+              <li>
+                <Link to="/skywalker" className="third_link">HOME</Link>
               </li>
-              <li className="t_link">
+              <li className="third_link">
                 <span>WATERS</span>
                 <i className="fa fa-caret-down"></i>
                 <div className="sky__dropdown_menu-water">
@@ -107,10 +106,10 @@ export const SkyNav = () => {
                   </ul>
                 </div>
               </li>
-              <li className="t_link">
+              <li>
                 <Link to="/skydelivery">DELIVERY INFORMATION</Link>
               </li>
-              <li className="t_link">
+              <li>
                 <Link to="/skyterms">TERMS & CONDITIONS</Link>
               </li>
             </ul>
