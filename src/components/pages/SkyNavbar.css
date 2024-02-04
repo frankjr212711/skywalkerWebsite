@@ -1,15 +1,11 @@
 
-
 .sky__nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  grid-row: span 3;
-  opacity: .9;
+  font-family: 'Jost';
  }
-
-
 .first__banner  {
   width: 100%;
   background: rgba(30, 115, 190);
