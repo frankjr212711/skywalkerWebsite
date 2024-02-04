@@ -11,7 +11,7 @@ export const SkyCategorySection = () => {
           <div className="item">
             <div className="item__img_box">
               <div className="img_box">
-                <img src="/images/sky-img-06.png" alt="" />
+                <img src="/images/sky-img-11.png" alt="" />
               </div>
             
             </div>
