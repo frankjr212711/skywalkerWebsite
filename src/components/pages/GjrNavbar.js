@@ -1,6 +1,6 @@
 
 import "./GjrNavbar.css";
-import { GjrHeroSection } from './GjrHeroSection';
+
 import { Hero } from "../Hero";
 import { Link } from "react-router-dom";
 
@@ -48,7 +48,9 @@ export const GjrNavbar = () => {
               </li>
             </ul>
           </div>
-        </div>
+      </div>
+      
+      
           <Hero/>
     
     </>
