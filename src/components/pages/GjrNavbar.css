@@ -100,18 +100,20 @@ text-decoration-thickness: 2px;
   left: 50%;
   transform: translateX(-50%);
   width: 98%;
-  height: 600px;
+  height: 65%;
   background: #f9f9f9;
   background: #111;
+  border-radius: 3px;
   visibility: hidden;
   opacity: 0;
   transition: .3s ease;
   border: 2px solid #111;
+
 }
 .gjr_link:hover .gjr_mega_dropdown {
   top: 235px;
   visibility: visible;
-  opacity: 1;
+  opacity:.9;
 }
 .gjr_link i {
   display: inline-block;
@@ -119,7 +121,7 @@ text-decoration-thickness: 2px;
   transition: all .4s ease;
 }
 .gjr_link:hover i {
-  transform: translateY(-5px);
+  transform: translateY(-2px);
 
 }
 
