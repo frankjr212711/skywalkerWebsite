@@ -51,7 +51,7 @@
 }
 .nav__title span {
   margin: 0 1rem;
-  color: #424242;
+  color: #111;
   font-weight: 600;
 
 }
@@ -99,13 +99,14 @@ text-decoration-thickness: 2px;
   top: 300px; 
   left: 50%;
   transform: translateX(-50%);
-  width: 95%;
+  width: 98%;
   height: 600px;
   background: #f9f9f9;
+  background: #111;
   visibility: hidden;
   opacity: 0;
   transition: .3s ease;
-  border: 1px solid #ddd;
+  border: 2px solid #111;
 }
 .gjr_link:hover .gjr_mega_dropdown {
   top: 235px;
