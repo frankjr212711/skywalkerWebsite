@@ -60,8 +60,10 @@
 }
 .item  .item__desc {
   text-align: center;
-  color: #898989;
+  color: #494949;
   padding: 1rem 0;
+  font-weight:600;
+  font-style: normal;
 }
 .item .item__post {
   font-size: 11px;
@@ -80,6 +82,10 @@
  }
  .item:hover .info__box {
   transform: translateY(-10px);
+ 
+ }
+ .item:hover .item__post {
+  color: #424242;
  }
  .category__section .notice__board_container {
   position: relative;
