@@ -1,5 +1,5 @@
 import "./SkyCategorySection.css";
-import "./Skywalker.css";
+
 import { Button } from "../Button";
 
 export const SkyCategorySection = () => {

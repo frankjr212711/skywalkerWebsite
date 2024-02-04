@@ -15,7 +15,7 @@ export const GjrNavbar = () => {
 
   return (
     <>
-      <section className="nav__gjr_wrapper">
+
         <div className="nav__gjr">
           <div className="nav__content_gjr">
             <div className="nav__banner_gjr">
@@ -49,13 +49,8 @@ export const GjrNavbar = () => {
             </ul>
           </div>
         </div>
-
-        
-        <div>
           <Hero/>
-        </div>
-     
-      </section>
+    
     </>
   );
 };

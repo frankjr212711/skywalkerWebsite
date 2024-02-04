@@ -1,11 +1,10 @@
-import "./SkyNavbar.css";
+
+import './Skywalker.css';
 import { Link } from "react-router-dom";
 
 // components
-import { SkyHeroSection } from "./SkyHeroSection";
 import { SkyNavbar } from "./SkyNavbar";
 import { SkyCategorySection } from "./SkyCategorySection";
-import { Hero } from "../Hero";
 
 const slides = [
   { url: "images/sky-img-01.jpg", title: "image_1" },
@@ -28,17 +27,13 @@ export const Skywalker = () => {
     <>
       <div className="sky__nav_wrapper">
         <SkyNavbar />
-
-        {/* <div style={containerStyles}>
-          <SkyHeroSection slides={slides} />
-        </div> */}
-
-
       </div>
 
-      {/* <div>
+      {/* <div className="category__wrapper">
         <SkyCategorySection />
       </div> */}
+
+
     </>
   );
 };
