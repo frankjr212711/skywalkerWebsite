@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { SkyNavbar } from "./SkyNavbar";
 import { SkyCategorySection } from "./SkyCategorySection";
 
+
 const slides = [
   { url: "images/sky-img-01.jpg", title: "image_1" },
   { url: "images/sky-img-02.jpg", title: "image_2" },
@@ -24,7 +25,9 @@ const containerStyles = {
 
 export const Skywalker = () => {
   return (
-    <>
+    <div className='sky__wrapper'>
+      
+
       <div className="sky__nav_wrapper">
         <SkyNavbar />
       </div>
@@ -34,6 +37,6 @@ export const Skywalker = () => {
       </div>
 
 
-    </>
+    </div>
   );
 };

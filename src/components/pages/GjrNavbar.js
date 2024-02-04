@@ -16,9 +16,14 @@ export const GjrNavbar = () => {
   return (
     <>
 
-        <div className="nav__gjr">
+      <div className="nav__gjr">
+        
           <div className="nav__content_gjr">
-            <div className="nav__banner_gjr">
+          <div className="nav__banner_gjr">
+          <div className="gjr_home_link">
+          <i className="fa fa-arrow-left"></i>
+          <Link to='/' className="anchor">Main Page</Link>
+        </div>
               <div className="logo_gjr">
                 {/* <img src="" alt="gjr_logo" /> */}
                 <i className="fas fa-snowflake"></i>
@@ -31,20 +36,46 @@ export const GjrNavbar = () => {
             </div>
 
             <ul>
-              <li>
+              <li className="gjr_link">
                 <Link to="/gjr">Home</Link>
               </li>
-              <li>
-                <Link>Kitchens</Link>
+              <li className="gjr_link">
+              <span>
+               Kitchens
+              </span>
+              <i className="fa fa-angle-down"></i>
+              <div className="gjr_mega_dropdown">
+
+              </div>
               </li>
-              <li>
-                <Link>Wordrobes</Link>
+              <li className="gjr_link">
+              <span>
+                Wardrobes
+              </span>
+              <i className="fa fa-angle-down"></i>
+              <div className="gjr_mega_dropdown">
+                
+              </div>
               </li>
-              <li>
-                <Link>TV Units</Link>
+              <li className="gjr_link">
+              <span>
+                TV Unit
+              </span>
+              <i className="fa fa-angle-down"></i>
+              <div className="gjr_mega_dropdown">
+                
+              </div>
               </li>
-              <li>
-                <Link>Vanity Units</Link>
+            <li className="gjr_link">
+              <span>
+                Vanity Unit
+              </span>
+              <i className="fa fa-angle-down"></i>
+          
+
+              <div className="gjr_mega_dropdown">
+                
+              </div>
               </li>
             </ul>
           </div>

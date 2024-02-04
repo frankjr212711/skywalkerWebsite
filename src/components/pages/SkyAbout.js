@@ -1,5 +1,5 @@
 import { Button } from "../Button"
-
+import './SkyAbout.css'
 
 export const SkyAbout = () => {
   return (
@@ -10,8 +10,6 @@ export const SkyAbout = () => {
         </div>
       </div>
      
-
-      <Button buttonStyle='btn--primary'>READ MORE</Button>
     </>
   )
 }

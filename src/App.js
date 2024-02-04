@@ -17,6 +17,9 @@ import { Librex } from "./components/pages/Librex";
 
 
 import { SkyAbout } from "./components/pages/SkyAbout";
+import { SkyCareers } from "./components/pages/SkyCareers";
+import { SkyTerms } from "./components/pages/SkyTerms";
+import { SkyDelivery } from "./components/pages/SkyDelivery";
 
 
 
@@ -36,8 +39,14 @@ function App() {
             <Route path="/skywalker" element={ <Skywalker />} />
             <Route path="/librex" element={ <Librex />} />
             <Route path="/fifthstar" element={<FifthStar />} /> 
-          {/*  */}
-          <Route path="/skyabout" element={ <SkyAbout />} />
+       
+            <Route path="/skyabout" element={ <SkyAbout />} />
+            <Route path="/skycareers" element={ <SkyCareers />} />
+            <Route path="/skyterms" element={ <SkyTerms />} />
+            <Route path="/skydelivery" element={ <SkyDelivery />} />
+  
+        
+    
 
 
           </Routes>

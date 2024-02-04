@@ -1,9 +1,10 @@
 
-.about__content_wrapper {
+.about__page_wrapper {
   width: 100%;
-
+  margin: auto;
 }
-.about__content_wrapper .abaout__content {
+.about__content {
   width: 80%;
   margin: auto;
+  border: 1px solid red;
 }

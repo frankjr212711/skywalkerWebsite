@@ -6,5 +6,8 @@
   text-decoration: none;
 
 }
-
+.sky__content {
+  width: 80%;
+  margin: auto;
+}
 

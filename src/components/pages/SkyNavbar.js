@@ -1,12 +1,18 @@
-import { Link } from 'react-router-dom';
-import './SkyNavbar.css';
-import { Hero } from '../Hero';
+import { Link } from "react-router-dom";
+import "./SkyNavbar.css";
+import { Hero } from "../Hero";
 
 export const SkyNavbar = () => {
   return (
     <>
       <div className="sky__nav">
-        
+        <div className="home_link">
+          <i className="fa fa-arrow-left"></i>
+          <Link to="/" className="anchor">
+            Main Page
+          </Link>
+        </div>
+
         <div className="first__banner">
           <div className="first__section_content">
             <h2>Quality Drinking Waters delivered across Ghana</h2>
@@ -100,35 +106,17 @@ export const SkyNavbar = () => {
                 </div>
               </li>
               <li className="t_link">
-                <span>MORE INFORMATION</span>
-                <i className="fa fa-caret-down"></i>
-                <div className="sky__dropdown_menu-info">
-                  <ul className="sky__dropdown_content">
-                    <li>
-                      <Link>CONTACT US</Link>
-                    </li>
-                    <li>
-                      <Link>DELIVERY INFORMATION</Link>
-                    </li>
-                    <li>
-                      <Link>TERMS & CONDITIONS</Link>
-                    </li>
-                    <li>
-                      <Link>CAREERS</Link>
-                    </li>
-                  </ul>
-                </div>
+                <Link to="/skydelivery">DELIVERY INFORMATION</Link>
+              </li>
+              <li className="t_link">
+                <Link to="/skyterms">TERMS & CONDITIONS</Link>
               </li>
             </ul>
           </div>
         </div>
+      </div>
 
-        </div>
-
-      
- 
-        <Hero/>
-     
+      <Hero />
     </>
-  )
-}
+  );
+};

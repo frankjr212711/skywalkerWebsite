@@ -1,4 +1,14 @@
-
+.home_link {
+  position: fixed;
+  top: 1.5rem;
+  left: 1rem;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  color: #fff;
+}
+.home_link .anchor { color: #fff; }
 .sky__nav {
   position: fixed;
   top: 0;
@@ -83,6 +93,7 @@
   font-size: .9em !important;
   font-weight: bolder;
  }
+
 .third__banner {
   width: 100%;
   background-image: linear-gradient(to right, #299fe7,rgba(41, 158, 231, 0.404)) ;
@@ -105,13 +116,13 @@
   color: #fff;
   font-size: 16px;
   font-weight: 500;
-  /* border-right: 1px solid rgba(255, 255, 255, .5); */
  }
  .third__section_content .t_link:hover {
   background: #000044;
   color: #fff;
   cursor: pointer;
  }
+
   .third__section_content li a {
     color:#fff;
     font-weight: 500;
