@@ -29,9 +29,9 @@ export const Skywalker = () => {
         <SkyNavbar />
       </div>
 
-      {/* <div className="category__wrapper">
+      <div className="category__wrapper">
         <SkyCategorySection />
-      </div> */}
+      </div>
 
 
     </>
