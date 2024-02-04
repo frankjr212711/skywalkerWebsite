@@ -118,7 +118,7 @@ text-decoration-thickness: 2px;
   transition: all .4s ease;
 }
 .gjr_link:hover i {
-  transform: translateY(-2px) rotateX(180deg);
+  transform: translateY(-5px);
 
 }
 
